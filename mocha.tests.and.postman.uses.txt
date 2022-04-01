@@ -1,0 +1,116 @@
+# sorted by mocha tests
+
+1. signup a user/company
+postman = {
+    url: "/user/signup",
+    // if a user
+    json: {
+        "username": "",
+        "email": "",
+        "password": ""
+    }
+
+    // if a company
+    url: user/signup/company
+    json: {
+        "companyname": "",
+        "email": "",
+        "password": ""
+    }
+}
+
+RABEYA
+//Failure cases" duplicate username or email, or invalid email
+//company and user signup info can be the same
+
+
+2. user/company login
+postman = {
+    url: "/user/login/company"
+    url: "/user/login",
+    json: {
+        "email": "",
+        "password": ""
+    }
+
+
+}
+
+3. user deposit an amount when a user is logged in
+postman = {
+    url: "/user/deposit",
+    json: {
+        "email": "",
+        "amount": ""
+    }
+}
+// deposit amount 0 validation taken care from the front-end
+
+4. user withdraw an amount when a user is logged in
+postman = {
+    url: "/user/withdraw",
+    json: {
+        "email": "",
+        "amount": ""
+    }
+}
+// withdraw amount 0 validation taken care from the front-end
+
+5. user get a deposit history when a user is logged in
+postman = {
+    url: "/user/deposit/history"
+}
+[ see details in Array named "depositHistory" in response Object ]
+
+6. user get a withdraw history when a user is logged in
+postman = {
+    url: "/user/withdraw/history"
+}
+[ see details in Array named "withdrawHistory" in response Object ]
+
+7. user get a withdraw and deposit history when a user is logged in
+postman = {
+    url: "/user/deposit_withdraw/history"      
+}
+[ see details in Array named "depositHistory" and "withdrawHistory" in response Object ]
+// sort by date after concating those Array..
+
+
+
+11. send some money to a user/person using their id
+postman = {
+    url: "/user/money/transfer/user",
+    json: {
+        "recipientType": "", // value has to be user
+        "email": "", // money sender email
+        "amount": "",
+        "receiverID": "" // receiver(person) id
+    }
+}
+
+12. send some money to a company using their id
+postman = {
+    url: "/user/money/transfer/company",
+    json: {
+        "recipientType": "", // value has to be "company"
+        "email": "", // money sender email
+        "amount": "",
+        "receiverID": "" // receiver(company) id
+    }
+}
+
+8. update a user profile when a user is logged in
+postman = {
+    url: "/user/info/update",
+    json: {
+        "username": "updated value", // must contain an empty value
+        "email": "updated value", // must contain an empty value
+        "password": "updated value" // must contain an empty value
+    }
+}
+
+
+10. api test: show some information of a person using their id
+postman = {
+    url: "/api/user/id/<8 digit bank unique card number>"
+}
