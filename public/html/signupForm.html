@@ -1,0 +1,55 @@
+<form class="signupForm">
+  <h2>Please Signup</h2>
+  <hr />
+  <div class="ckBx">
+    <div>
+      <p onmouseover="ckeckIt(this)">
+        <input
+          type="radio"
+          id="userSignupRadio"
+          name="SignupRadio"
+          value="SignupRadioUser"
+        />
+        <label for="userSignupRadio">User</label>
+      </p>
+
+      <p onmouseover="ckeckIt(this)">
+        <input
+          type="radio"
+          id="CompanySignupRadio"
+          name="SignupRadio"
+          value="SignupRadioCompany"
+        />
+        <label for="CompanySignupRadio">Company</label>
+      </p>
+    </div>
+
+    <div class="error ckBx_err"></div>
+  </div>
+
+  <div>
+    <label for="userN">Username/Company name</label>
+    <input type="text" name="username_" id="userN" />
+    <div class="error"></div>
+  </div>
+
+  <div>
+    <label for="eMail">Email</label>
+    <input type="email" name="email_" id="eMail" />
+    <div class="error"></div>
+  </div>
+
+  <div>
+    <label for="pass">Password</label>
+    <input type="password" name="password_" id="pass" />
+    <div class="error"></div>
+  </div>
+
+  <input type="submit" value="Signup" name="signup_" onclick="testFun()" />
+
+  <hr style="margin-bottom: 20px" />
+
+  <p class="d6 letterSpc0">
+    already have account? <a class="a1_c_" href="user/login">Login</a>
+  </p>
+</form>

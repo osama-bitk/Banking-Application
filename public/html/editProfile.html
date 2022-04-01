@@ -1,0 +1,59 @@
+<div class="signupForm">
+  <h2>Edit Profile</h2>
+  <hr />
+  <div class="successUpdate"></div>
+
+  <div class="editPurposeDiv">
+    <label for="ed_username">username</label>
+    <div class="editUnitContainer">
+      <input
+        type="text"
+        name="ed_username_"
+        id="ed_username"
+        readonly
+        value="testuser123"
+      />
+    </div>
+  </div>
+
+  <div class="editPurposeDiv">
+    <label for="ed_email">email</label>
+    <div class="editUnitContainer">
+      <input
+        type="email"
+        name="ed_email_"
+        id="ed_email"
+        readonly
+        value="testuser123"
+      />
+    </div>
+  </div>
+
+  <div class="editPurposeDiv">
+    <label for="ed_password">password</label>
+    <div class="editUnitContainer">
+      <input
+        type="text"
+        name="ed_password_"
+        id="ed_password"
+        readonly
+        placeholder="new password"
+      />
+    </div>
+  </div>
+
+  <div id="giveOldPassword" class="_divShadowType">
+    <div>
+      <label for="oldPass">Old password</label>
+      <input type="password" id="oldPass" />
+      <div class="error"></div>
+
+      <div>
+        <button id="cancel_old_pass" onclick="cancel_old_pass(this)">
+          cancel
+        </button>
+        <button id="ok_old_pass" onclick="ok_old_pass(this)">ok</button>
+      </div>
+    </div>
+  </div>
+</div>

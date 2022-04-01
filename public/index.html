@@ -1,0 +1,41 @@
+<!--
+   note: on root directory in
+   public/ the folder "html" contains all the html files
+   that contains the app html contents
+   in that folder all the html file names explain what it implements
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NODE.js BANK</title>
+    <!-- this file contains all the app's styles -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- ../js/selectors_.js this file contains common functions..
+         this is almost like jquery but it is homemade version
+     -->
+    <script src="../js/selectors_.js"></script>
+    <!-- main app controller, mainly this contains common functions  -->
+    <script src="../js/app.js" defer></script>
+  </head>
+  <body>
+    <div class="header">
+      <div>
+        <a href="/">NODE.js BANK</a>
+
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="user/login">Login</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- almost everytime this div's (div.app) contents changes by using javascript,
+      this is almost like a sigle page application
+     -->
+    <div class="app">
+      <div class="inside_app"></div>
+    </div>
+  </body>
+</html>

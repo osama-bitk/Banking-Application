@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #eceeef;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  letter-spacing: 1.2px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.signupForm > div.editPurposeDiv {
+  flex-direction: row;
+  width: 250px;
+}
+
+div.editUnitContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+div.editUnitContainer input {
+  display: none;
+  margin: 5px;
+}
+
+div.editUnitContainer button {
+  padding: 0px 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  margin-left: 5px;
+  font-weight: 500;
+  align-self: center;
+}
+
+div.editContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+div.finaleActionContainer {
+  display: none;
+}
+
+div.successUpdate {
+  color: #0a0;
+  margin-bottom: 10px;
+}
+
+td,
+th {
+  border: 2px solid #888787;
+  text-align: left;
+  padding: 10px;
+}
+
+.letterSpc0 {
+  letter-spacing: 0px;
+}
+
+.d6 {
+  color: #6d6d6d;
+  font-weight: 600;
+}
+
+.app {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.inside_app {
+  width: 80%;
+  padding: 20px 10px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #3c80e4;
+}
+
+.header div {
+  width: 80%;
+  padding: 10px 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header div > a {
+  font-size: 22px;
+  font-weight: 600;
+  color: #eceeef;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.header ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.header ul li a {
+  padding: 8px 10px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.signupForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+}
+
+.signupForm > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px 0;
+}
+
+.signupForm h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  color: #3f3f3f;
+}
+
+label {
+  color: #303030;
+  font-weight: 600;
+}
+
+.signupForm input {
+  padding: 8px 10px;
+  width: 250px;
+  margin: 5px 0;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  border: none;
+}
+
+.signupForm input[type="radio"] {
+  box-shadow: unset;
+  width: unset;
+  margin: 2px 0;
+}
+
+div.ckBx {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div.ckBx > div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+div.ckBx p {
+  display: flex;
+  flex-direction: column;
+}
+
+hr {
+  width: 220px;
+  margin: 10px 0;
+  border-top: 1px solid #c2c2c2;
+}
+
+input[type="submit"],
+input[type="button"] {
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: #2b76e5;
+  color: rgb(236, 238, 239);
+  padding: 8px 10px;
+  margin: 2px;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  border: none;
+  font-weight: 600;
+}
+
+.dashboard p {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #3f3f3f;
+}
+
+.dashboard span {
+  font-size: 1.05rem;
+  font-weight: 300;
+  color: #606060;
+}
+
+.error {
+  color: rgb(184, 20, 20);
+  font-weight: 400;
+}
+
+.extendSignupForm {
+  flex-direction: row;
+}
+
+.extendInputSubmit {
+  align-self: end;
+  flex-basis: content;
+}
+
+/*home page css*/
+.h1_c_ {
+  font-weight: 300;
+  font-size: 4.25rem;
+  color: #3e3e3e;
+  line-height: 4.25rem;
+  margin-bottom: 15px;
+}
+
+.p1_c_ {
+  font-size: 1.05rem;
+  color: #7d7d7d;
+  font-weight: 100;
+}
+
+.hr1_c_ {
+  width: unset !important;
+  margin: 25px 0px;
+  border-top: 1px solid #c2c2c2;
+}
+
+.p2_c_ {
+  font-size: 1.02rem;
+  color: #3e3e3e;
+  font-weight: 600;
+}
+
+.p2_c_ul {
+  list-style-type: none;
+  margin: 8px 0 20px 15px;
+}
+
+.p2_c_ul li {
+  color: #6d6d6d;
+  font-weight: 600;
+}
+
+.ul1_c_ {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-top: 15px;
+}
+
+.a1_c_ {
+  padding: 8px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: #2b76e5;
+  color: #eceeef;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+/*api*/
+.apiGetDiv {
+  background-color: #c7ecff;
+  border-radius: 5px;
+}
+
+.preApi {
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  padding: 5px 8px;
+}
+
+div._divShadowType {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  margin: unset;
+
+  background-color: rgba(0, 0, 0, 0.35);
+
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#giveOldPassword > div {
+  background-color: #f3efef;
+  padding: 15px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#giveOldPassword > div > div {
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 15px;
+}
+
+#giveOldPassword > div > div button {
+  padding: 5px;
+  margin: 0 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .inside_app,
+  .header div,
+  .signupForm input,
+  .signupForm > div {
+    width: 100%;
+  }
+
+  .signupForm input {
+    padding: 10px 12px;
+  }
+}
