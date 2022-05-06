@@ -1,5 +1,5 @@
 # Banking-Application
-A simple full-stack banking application
+A simple full-stack banking application based on the MVC architechture 
 
 Homepage
 ![Screenshot 2022-04-08 at 3 24 21 PM](https://user-images.githubusercontent.com/64456175/162553646-0aa655c0-d078-4e7d-9676-6d3fc8ef3266.png)
